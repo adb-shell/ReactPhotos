@@ -1,0 +1,23 @@
+{
+  "name": "reactcomic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NULLPointerGuy/ReactComic.git"
+  },
+  "author": "karthik rk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NULLPointerGuy/ReactComic/issues"
+  },
+  "homepage": "https://github.com/NULLPointerGuy/ReactComic#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-native": "^0.42.0"
+  }
+}
