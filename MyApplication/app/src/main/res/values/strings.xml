@@ -5,4 +5,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="unsplash">Unsplash</string>
+    <string name="tostartwith">Click on the menu items to get started!!</string>
+    <string name="react_native">React Native</string>
+    <string name="demonstration">Android + React Native</string>
 </resources>

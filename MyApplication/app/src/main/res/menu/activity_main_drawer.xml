@@ -4,9 +4,6 @@
     <group android:checkableBehavior="single">
         <item
                 android:id="@+id/comic_characters"
-                android:title="Comic Characters"/>
-        <item
-                android:id="@+id/pokemon"
-                android:title="Pokemon"/>
+                android:title="@string/unsplash"/>
     </group>
 </menu>

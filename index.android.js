@@ -7,16 +7,19 @@ import {
   Text,
   View
 } from 'react-native';
+import UnsplashPhotoList from './react-components/UnsplashComponent/UnsplashPhotoList';
 
 class ComicComponent extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.hello}>Hello, World</Text>
+        <UnsplashPhotoList />
       </View>
     )
   }
 }
+
+
 var styles = StyleSheet.create({
   container: {
     flex: 1,

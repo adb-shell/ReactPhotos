@@ -80,10 +80,8 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         switch (item.getItemId()){
             case R.id.comic_characters:
-                startActivity(ReactHolderActivity.getIntent(this,"Comic Characters"));
-                break;
-            case R.id.pokemon:
-                startActivity(ReactHolderActivity.getIntent(this,"Pokemon"));
+                startActivity(ReactHolderActivity.getIntent(this,
+                        getString(R.string.unsplash)));
                 break;
         }
 
