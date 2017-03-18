@@ -19,6 +19,7 @@ import com.facebook.react.shell.MainReactPackage;
 
 public class ReactHolderActivity extends AppCompatActivity implements DefaultHardwareBackBtnHandler {
     private static final String TITLE_ARG = "title";
+    private static final String TYPE_ARG = "type";
     private ReactRootView mReactRootView;
     private ReactInstanceManager mReactInstanceManager;
 
@@ -36,7 +37,13 @@ public class ReactHolderActivity extends AppCompatActivity implements DefaultHar
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
-        mReactRootView.startReactApplication(mReactInstanceManager, "ComicComponent", null);
+
+        //passing args to react native.
+        Bundle bundleProp = new Bundle();
+        bundleProp.putBoolean(TYPE_ARG,getIntent()
+                .getStringExtra(TITLE_ARG).equals(getString(R.string.unsplash)));
+
+        mReactRootView.startReactApplication(mReactInstanceManager, "PhotoComponent",bundleProp);
         setContentView(mReactRootView);
 
         setTitle(getIntent().getStringExtra(TITLE_ARG));

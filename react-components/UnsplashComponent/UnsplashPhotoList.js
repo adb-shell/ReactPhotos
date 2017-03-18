@@ -64,7 +64,7 @@ export default class UnsplashPhotoList extends React.Component{
   }
 }
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
   centering: {
     alignItems: 'center',
     justifyContent: 'center',

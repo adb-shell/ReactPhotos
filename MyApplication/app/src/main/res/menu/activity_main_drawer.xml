@@ -3,7 +3,10 @@
 
     <group android:checkableBehavior="single">
         <item
-                android:id="@+id/comic_characters"
+                android:id="@+id/unsplash"
                 android:title="@string/unsplash"/>
+        <item
+                android:id="@+id/pixa_bay"
+                android:title="@string/pixa_bay"/>
     </group>
 </menu>

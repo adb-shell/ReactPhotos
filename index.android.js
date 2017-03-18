@@ -8,19 +8,27 @@ import {
   View
 } from 'react-native';
 import UnsplashPhotoList from './react-components/UnsplashComponent/UnsplashPhotoList';
+import PixaBay from './react-components/PixabayComponent/PixaBay';
 
-class ComicComponent extends React.Component {
+class PhotoComponent extends React.Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <UnsplashPhotoList />
-      </View>
-    )
+     if(this.props.type){
+       return (
+         <View style={styles.container}>
+           <UnsplashPhotoList />
+         </View>
+       );
+     }
+     return (
+       <View style={styles.container}>
+           <PixaBay />
+       </View>
+     );
   }
 }
 
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -32,4 +40,4 @@ var styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('ComicComponent', () => ComicComponent);
+AppRegistry.registerComponent('PhotoComponent', () => PhotoComponent);

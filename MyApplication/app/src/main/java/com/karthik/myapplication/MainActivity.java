@@ -79,9 +79,14 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         switch (item.getItemId()){
-            case R.id.comic_characters:
+            case R.id.unsplash:
                 startActivity(ReactHolderActivity.getIntent(this,
                         getString(R.string.unsplash)));
+                break;
+
+            case R.id.pixa_bay:
+                startActivity(ReactHolderActivity.getIntent(this,
+                        getString(R.string.pixa_bay)));
                 break;
         }
 
